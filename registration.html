@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightblue;
+        }
+
+        .container {
+            width: 300px;
+            margin: 100px auto;
+            padding: 25px;
+            background: white;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px 25px;
+            background: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>User Registration</h1>
+
+        <form onsubmit="register(event)">
+            <input type="text" placeholder="Enter Name" required>
+
+            <input type="email" placeholder="Enter Email" required>
+
+            <input type="password" placeholder="Enter Password" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script>
+        function register(event) {
+            event.preventDefault();
+            alert("Registration Successful!");
+        }
+    </script>
+
+</body>
+</html>
